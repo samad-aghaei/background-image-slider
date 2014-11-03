@@ -4,7 +4,7 @@ function slideSwitch() {
     if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
 
     // use this to pull the images in the order they appear in the markup
-    var $next =  $active.next().length ? $active.next()
+    var $next =  $active.next().is("img") ? $active.next()
         : $('#slideshow IMG:first');
 
     // pull the images in random order
