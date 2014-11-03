@@ -39,7 +39,12 @@ set the width and height to match your images
 	top: 0;
 	left: 0;
 }
-		
+.overlay{
+	min-height:1px;
+	height:100%;
+	width:100%;
+	background: url('../images/pattern.png') left top repeat fixed;
+}		
 @media screen and (max-width: 1024px){
 	img.bg {
 	left: 50%;
